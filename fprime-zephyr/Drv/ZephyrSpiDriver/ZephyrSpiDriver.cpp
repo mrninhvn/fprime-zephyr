@@ -62,9 +62,9 @@ void ZephyrSpiDriver ::SpiReadWrite_handler(FwIndexType portNum,
 
   int status = spi_transceive(this->m_dev, &spi_config, &write_buffer_set, &read_buffer_set); 
   if(status <= 0){
-    printk("SPI read/write error\n");
+    // printk("SPI read/write error\n");
   }
-  printk("SPI read/write success\n");
+  // printk("SPI read/write success\n");
 }
 
 } // namespace Zephyr

@@ -30,6 +30,10 @@ public:
   //! Destroy ZephyrSpiDriver object
   ~ZephyrSpiDriver();
 
+  void open(const struct device *device, spi_config spiConfig) {
+      configure(device, spiConfig);
+  }
+
 private:
   void configure(const struct device *device, spi_config spiConfig);
 
