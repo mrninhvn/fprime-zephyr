@@ -17,7 +17,8 @@ register_fprime_config(
         Os_Console_Zephyr
 
         # Can remain stubs for now
-        Os_File_Stub
+        # Os_File_Stub
+        Os_File_HostedPayload
         Os_Cpu_Stub
         Os_Memory_Stub
     INTERFACE # No buildable files generated
